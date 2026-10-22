@@ -1,0 +1,856 @@
+{
+  "common": {
+    "siteName": "Crestmont University",
+    "phone": "+1 000 000 000",
+    "email": "admissions@xyz.com",
+    "address": "Mesa, AZ 85212, United States",
+    "tagline": "People • Purpose • A Brighter Tomorrow",
+    "socialLinks": {
+      "facebook": "https://facebook.com",
+      "instagram": "https://instagram.com",
+      "linkedin": "https://linkedin.com"
+    }
+  },
+  "categories": {
+    "Education": {
+      "templateComponents": {
+        "template-1": {
+          "shared": {
+            "Header": "UniversityHeader1",
+            "Footer": "UniversityFooter1"
+          },
+          "pages": {
+            "home": {
+              "components": [
+                { "key": "HeroBanner", "component": "UniversityHero1" },
+                { "key": "About", "component": "UniversityAbout1" },
+                { "key": "StatsSection", "component": "UniversityStats1" },
+                { "key": "Courses", "component": "UniversityCourses1" },
+                { "key": "Faculty", "component": "UniversityFaculty1" },
+                { "key": "CampusLife", "component": "UniversityCampusLife1" },
+                { "key": "TestimonialsSection", "component": "UniversityTestimonials1" },
+                { "key": "NewsEvents", "component": "UniversityNewsEvents1" },
+                { "key": "EnrollCTA", "component": "UniversityEnrollCTA1" }
+              ]
+            },
+            "about": {
+              "components": [
+                { "key": "PageBanner", "component": "UniversityPageBanner1" },
+                { "key": "About", "component": "UniversityAbout1" },
+                { "key": "StatsSection", "component": "UniversityStats1" },
+                { "key": "CampusLife", "component": "UniversityCampusLife1" },
+                { "key": "AdmissionsProcess", "component": "UniversityAdmissionsProcess1" }
+              ]
+            },
+            "academics": {
+              "components": [
+                { "key": "PageBanner", "component": "UniversityPageBanner1" },
+                { "key": "Academics", "component": "UniversityAcademics1" }
+              ]
+            },
+            "courses": {
+              "components": [
+                { "key": "PageBanner", "component": "UniversityPageBanner1" },
+                { "key": "Courses", "component": "UniversityCourses1" }
+              ]
+            },
+            "courseDetail": {
+              "components": [
+                { "key": "PageBanner", "component": "UniversityPageBanner1" },
+                { "key": "CourseDetailPage", "component": "UniversityCourseDetail1" }
+              ]
+            },
+            "faculty": {
+              "components": [
+                { "key": "PageBanner", "component": "UniversityPageBanner1" },
+                { "key": "Faculty", "component": "UniversityFaculty1" }
+              ]
+            },
+            "campusLife": {
+              "components": [
+                { "key": "PageBanner", "component": "UniversityPageBanner1" },
+                { "key": "CampusLife", "component": "UniversityCampusLife1" }
+              ]
+            },
+            "newsEvents": {
+              "components": [
+                { "key": "PageBanner", "component": "UniversityPageBanner1" },
+                { "key": "NewsEvents", "component": "UniversityNewsEvents1" }
+              ]
+            },
+            "newsEventDetail": {
+              "components": [
+                { "key": "PageBanner", "component": "UniversityPageBanner1" },
+                { "key": "NewsEventDetailPage", "component": "UniversityNewsEventDetail1" }
+              ]
+            },
+            "enroll": {
+              "components": [
+                { "key": "PageBanner", "component": "UniversityPageBanner1" },
+                { "key": "Enroll", "component": "UniversityEnroll1" }
+              ]
+            },
+            "contact": {
+              "components": [
+                { "key": "PageBanner", "component": "UniversityPageBanner1" },
+                { "key": "Contact", "component": "UniversityContact1" }
+              ]
+            }
+          }
+        }
+      },
+      "sections": {
+        "Header": {
+          "variants": {
+            "UniversityHeader1": {
+              "brandName": "CRESTMONT",
+              "subBrand": "UNIVERSITY",
+              "navLinks": [
+                { "title": "Home", "path": "/" },
+                { "title": "About University", "path": "/about" },
+                { "title": "Academics", "path": "/academics" },
+                { "title": "Courses", "path": "/courses" },
+                { "title": "Faculty", "path": "/faculty" },
+                { "title": "Campus Life", "path": "/campus-life" },
+                { "title": "News & Events", "path": "/news-events" },
+                { "title": "Contact Us", "path": "/contact-us" }
+              ],
+              "ctaButton": {
+                "text": "Enroll Now",
+                "path": "/enroll"
+              }
+            }
+          }
+        },
+        "HeroBanner": {
+          "variants": {
+            "UniversityHero1": {
+              "badge": "Knowledge Meets Opportunity",
+              "title": "A BRIGHTER",
+              "titleHighlight": "TOMORROW",
+              "description": "Empowering curious minds with world-class education, real-world skills, and a global perspective.",
+              "leftImage": "/hero1.webp",
+              "leftImageAlt": "Student with books",
+              "rightImage": "/hero2.webp",
+              "rightImageAlt": "University Campus Tower",
+              "ctaButton": {
+                "text": "View Our Programs",
+                "path": "/courses"
+              },
+              "seal": {
+                "estd": "ESTD. 1974",
+                "brand": "CRESTMONT"
+              }
+            }
+          }
+        },
+        "PageBanner": {
+          "variants": {
+            "UniversityPageBanner1": {
+              "backgroundImage": "/pagebanner.jpg"
+            }
+          }
+        },
+        "StatsSection": {
+          "variants": {
+            "UniversityStats1": {
+              "stats": [
+                { "value": "12,500", "label": "Students Enrolled Across Programs" },
+                { "value": "1,200", "label": "Expert Faculty & Staff" },
+                { "value": "95+", "label": "Global Partner Universities" },
+                { "value": "80%", "label": "Graduate Employability Rate" }
+              ]
+            }
+          }
+        },
+        "About": {
+          "variants": {
+            "UniversityAbout1": {
+              "badge": "ABOUT UNIVERSITY",
+              "title": "A Legacy",
+              "titleHighlight": "of Excellence",
+              "description": "Crestmont University is committed to nurturing bright minds through quality education, innovative research, and a vibrant campus community. We provide an environment where students grow academically, develop real-world skills, and create a positive impact on society.",
+              "image": "/a1.webp",
+              "ctaButton": {
+                "text": "Read More",
+                "path": "/about"
+              }
+            }
+          }
+        },
+        "AdmissionsProcess": {
+          "variants": {
+            "UniversityAdmissionsProcess1": {
+              "badge": "ADMISSIONS PROCESS",
+              "title": "How to Apply to",
+              "titleHighlight": "Crestmont University",
+              "description": "If you have any questions or need assistance at any step of the application process, our admissions team is here to help. We look forward to welcoming you to Crestmont University.",
+              "steps": [
+                {
+                  "stepNumber": "01",
+                  "title": "Create an Account",
+                  "description": "Start your application by creating an account to access resources and updates.",
+                  "icon": "UserPlus",
+                  "type": "maroon"
+                },
+                {
+                  "stepNumber": "02",
+                  "title": "Online Application",
+                  "description": "Complete the online application with your details and documents.",
+                  "icon": "FileCheck",
+                  "type": "image",
+                  "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+                },
+                {
+                  "stepNumber": "03",
+                  "title": "Programs & Requirements",
+                  "description": "Explore our programs and check the admission requirements for your chosen course.",
+                  "icon": "Award",
+                  "type": "maroon"
+                }
+              ]
+            }
+          }
+        },
+        "Academics": {
+          "variants": {
+            "UniversityAcademics1": {
+              "badge": "ACADEMICS",
+              "title": "Academic",
+              "titleHighlight": "Excellence",
+              "description": "At Crestmont University, our academic programs are designed to inspire curiosity, develop critical thinking, and prepare students for real-world challenges while fostering a learning environment that empowers every individual to grow and achieve their goals.",
+              "heroImage": "/a1.webp",
+              "stats": [
+                { "value": "95%", "label": "Student Success Rate" },
+                { "value": "Top 10", "label": "Universities for Research & Innovation" },
+                { "value": "No. 1", "label": "In Student Satisfaction" }
+              ],
+              "undergraduate": {
+                "title": "Undergraduate",
+                "titleHighlight": "Education",
+                "description": "Our undergraduate programs provide a strong academic foundation along with hands-on learning experiences to help students discover their interests and build successful careers.",
+                "image": "/aditya.jpg",
+                "programs": [
+                  { "name": "Business Administration", "degree": "B.A." },
+                  { "name": "Computer Science", "degree": "B.Sc." },
+                  { "name": "Media & Communication", "degree": "B.A." },
+                  { "name": "Psychology", "degree": "B.A." },
+                  { "name": "Environmental Studies", "degree": "B.Sc." }
+                ]
+              },
+              "graduate": {
+                "title": "Graduate",
+                "titleHighlight": "Education",
+                "description": "Our graduate programs are designed for in-depth learning, research, and professional development, enabling students to advance their knowledge and make a meaningful impact in their fields.",
+                "image": "/sneha.avif",
+                "programs": [
+                  { "name": "MBA – Management Studies", "degree": "M.B.A." },
+                  { "name": "M.Sc. in Data Science", "degree": "M.Sc." },
+                  { "name": "M.A. in International Relations", "degree": "M.A." },
+                  { "name": "M.Sc. in Biotechnology", "degree": "M.Sc." }
+                ]
+              },
+              "lifelongLearning": {
+                "title": "Lifelong",
+                "titleHighlight": "Learning",
+                "description": "We offer a wide range of continuing education programs, short courses, and certifications to help learners of all ages stay curious and future-ready.",
+                "image": "/a2.jpg",
+                "items": [
+                  "Short-Term Certificate Programs",
+                  "Professional Certifications",
+                  "Online Learning Courses",
+                  "Skill Development Workshops"
+                ]
+              },
+              "professionalDevelopment": {
+                "title": "Professional",
+                "titleHighlight": "Development",
+                "description": "We provide training, resources, and mentorship to help students and working professionals enhance their skills, expand their network, and achieve their career goals.",
+                "image": "/p6.jpg",
+                "items": [
+                  "Industry-Led Training Programs",
+                  "Career Readiness Workshops",
+                  "Research & Innovation Support",
+                  "Leadership Development"
+                ]
+              }
+            }
+          }
+        },
+        "Courses": {
+          "variants": {
+            "UniversityCourses1": {
+              "badge": "OUR COURSES",
+              "title": "Discover Our",
+              "titleHighlight": "Courses",
+              "leftCard": {
+                "tag": "UNDERGRADUATE",
+                "title": "Bachelor's Programs",
+                "description": "Build a strong foundation with industry-relevant undergraduate programs designed for future-ready careers.",
+                "ctaText": "Explore Programs",
+                "ctaPath": "/courses/btech-computer-science"
+              },
+              "centerLinks": [
+                { "title": "Engineering & Technology", "path": "/courses/btech-computer-science" },
+                { "title": "Business & Management", "path": "/courses/bba-business-administration" },
+                { "title": "Arts, Science & Humanities", "path": "/courses/btech-computer-science" }
+              ],
+              "rightCard": {
+                "tag": "POSTGRADUATE",
+                "title": "Master's Programs",
+                "description": "Advance your knowledge and expertise with specialized postgraduate programs for a global career.",
+                "ctaText": "Explore Programs",
+                "ctaPath": "/courses/btech-computer-science"
+              },
+              "columns": {
+                "undergraduate": {
+                  "badge": "UNDERGRADUATE",
+                  "title": "Bachelor's Programs",
+                  "description": "Build a strong foundation with industry-relevant undergraduate programs designed for future-ready careers.",
+                  "link": "/courses/btech-computer-science",
+                  "linkText": "Explore Programs"
+                },
+                "disciplines": [
+                  { "title": "Engineering & Technology", "href": "/courses/btech-computer-science" },
+                  { "title": "Business & Management", "href": "/courses/bba-business-administration" },
+                  { "title": "Arts, Science & Humanities", "href": "/courses/btech-computer-science" }
+                ],
+                "postgraduate": {
+                  "badge": "POSTGRADUATE",
+                  "title": "Master's Programs",
+                  "description": "Advance your knowledge and expertise with specialized postgraduate programs for a global career.",
+                  "link": "/courses/btech-computer-science",
+                  "linkText": "Explore Programs"
+                }
+              },
+              "programs": [
+                {
+                  "slug": "btech-computer-science",
+                  "category": "Undergraduate",
+                  "title": "B.Tech in Computer Science",
+                  "titleHighlight": "Computer Science & Engineering",
+                  "duration": "4 Years",
+                  "degree": "B.Tech",
+                  "description": "Build a strong foundation in computing, AI architectures, distributed systems, and modern software engineering.",
+                  "fallIntake": {
+                    "term": "Fall 2025",
+                    "months": "(Aug – Dec)"
+                  },
+                  "springIntake": {
+                    "term": "Spring 2026",
+                    "months": "(Jan – May)"
+                  },
+                  "tuitionFee": "₹1,20,000 / Sem",
+                  "about": "The Bachelor of Technology in Computer Science program is tailored to build strong foundations in computational theory, algorithm design, cloud engineering, and artificial intelligence. Students engage directly in state-of-the-art laboratory environments and real-world deployment stacks.",
+                  "keyAreas": "Core algorithms, distributed systems, database management systems, AI/ML development, cybersecurity protocols, mobile software architectures, and automated cloud computing.",
+                  "teachingMethodsImage": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+                  "teachingMethods": [
+                    { "label": "Interactive Code Labs", "text": "Continuous hands-on software development with modern developer tooling." },
+                    { "label": "Industry Mentorship", "text": "Regular technical roundtables and architecture reviews by principal tech leads." },
+                    { "label": "Capstone Prototyping", "text": "Full-cycle production deployment of open-source and proprietary software products." }
+                  ],
+                  "curriculum": [
+                    "Data Structures & Advanced Algorithms",
+                    "Database Management Systems & SQL/NoSQL",
+                    "Artificial Intelligence & Machine Learning Architectures",
+                    "Computer Architecture & Operating Systems",
+                    "Cloud Computing, Microservices & DevOps Pipelines"
+                  ],
+                  "requirements": [
+                    "Senior Secondary (10+2) with Physics, Mathematics & Chemistry",
+                    "Minimum 60% aggregate score from a recognized educational board",
+                    "Qualifying score in University Entrance Examination or State CET",
+                    "Proficiency in basic English communication"
+                  ]
+                },
+                {
+                  "slug": "bba-business-administration",
+                  "category": "Undergraduate",
+                  "title": "Bachelor of Business Administration",
+                  "titleHighlight": "Business Administration",
+                  "duration": "3 Years",
+                  "degree": "B.B.A.",
+                  "description": "Cultivate business leadership, strategic finance, brand marketing, and operational management skills.",
+                  "fallIntake": {
+                    "term": "Fall 2025",
+                    "months": "(Aug – Dec)"
+                  },
+                  "springIntake": {
+                    "term": "Spring 2026",
+                    "months": "(Jan – May)"
+                  },
+                  "tuitionFee": "₹95,000 / Sem",
+                  "about": "The BBA program at Crestmont provides students with strategic business understanding, leadership frameworks, and analytics-driven decision capabilities across modern corporate ecosystems.",
+                  "keyAreas": "Corporate finance, organizational behavior, global marketing strategy, business analytics, supply chain operations, and ethical entrepreneurship.",
+                  "teachingMethodsImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
+                  "teachingMethods": [
+                    { "label": "Case Study Simulations", "text": "Live dissection of Fortune 500 company case studies and business pivots." },
+                    { "label": "Executive Workshops", "text": "Intensive strategy sprints driven by guest corporate CXOs." },
+                    { "label": "Corporate Internships", "text": "Mandatory industry immersion ensuring practical market readiness." }
+                  ],
+                  "curriculum": [
+                    "Principles of Management & Organization",
+                    "Financial Accounting & Valuation Models",
+                    "Marketing Dynamics & Strategic Branding",
+                    "Corporate Law & Business Governance",
+                    "Business Intelligence & Decision Analytics"
+                  ],
+                  "requirements": [
+                    "Senior Secondary (10+2) in Commerce, Science, or Humanities",
+                    "Minimum 55% aggregate from a recognized secondary board",
+                    "Clearance in University Personal Interview round",
+                    "Strong interpersonal and aptitude communication"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "CoursesSection": {
+          "variants": {
+            "UniversityCourses1": {
+              "badge": "OUR COURSES",
+              "title": "Discover Our",
+              "titleHighlight": "Courses",
+              "leftCard": {
+                "tag": "UNDERGRADUATE",
+                "title": "Bachelor's Programs",
+                "description": "Build a strong foundation with industry-relevant undergraduate programs designed for future-ready careers.",
+                "ctaText": "Explore Programs",
+                "ctaPath": "/courses/btech-computer-science"
+              },
+              "centerLinks": [
+                { "title": "Engineering & Technology", "path": "/courses/btech-computer-science" },
+                { "title": "Business & Management", "path": "/courses/bba-business-administration" },
+                { "title": "Arts, Science & Humanities", "path": "/courses/btech-computer-science" }
+              ],
+              "rightCard": {
+                "tag": "POSTGRADUATE",
+                "title": "Master's Programs",
+                "description": "Advance your knowledge and expertise with specialized postgraduate programs for a global career.",
+                "ctaText": "Explore Programs",
+                "ctaPath": "/courses/btech-computer-science"
+              }
+            }
+          }
+        },
+        "Faculty": {
+          "variants": {
+            "UniversityFaculty1": {
+              "badge": "OUR FACULTY",
+              "title": "Meet Our",
+              "titleHighlight": "Faculty",
+              "description": "Our faculty members bring together academic excellence, research expertise, and real-world experience to provide a transformative learning experience for our students.",
+              "members": [
+                {
+                  "id": 1,
+                  "name": "Dr. Rajesh Sharma",
+                  "designation": "Professor of Computer Science",
+                  "bio": "Specializes in artificial intelligence, machine learning, and data analytics.",
+                  "image": "/p1.avif"
+                },
+                {
+                  "id": 2,
+                  "name": "Dr. Neha Kapoor",
+                  "designation": "Associate Professor",
+                  "bio": "Focuses on data structures, algorithms, and software engineering.",
+                  "image": "/p2.jpg"
+                },
+                {
+                  "id": 3,
+                  "name": "Dr. Amit Verma",
+                  "designation": "Professor of Management",
+                  "bio": "Expert in strategic management, innovation, and leadership development.",
+                  "image": "/p3.avif"
+                },
+                {
+                  "id": 4,
+                  "name": "Dr. Pooja Mehta",
+                  "designation": "Associate Professor",
+                  "bio": "Researches human behavior, organizational psychology, and workplace learning.",
+                  "image": "/p4.avif"
+                },
+                {
+                  "id": 5,
+                  "name": "Dr. Sameer Khan",
+                  "designation": "Professor of Economics",
+                  "bio": "Specializes in economic policy, development, and global markets.",
+                  "image": "/p5.jpg"
+                },
+                {
+                  "id": 6,
+                  "name": "Dr. Kavita Rao",
+                  "designation": "Associate Professor",
+                  "bio": "Focuses on literature, cultural studies, and contemporary social issues.",
+                  "image": "/p6.jpg"
+                },
+                {
+                  "id": 7,
+                  "name": "Dr. Arjun Malhotra",
+                  "designation": "Assistant Professor",
+                  "bio": "Specializes in cybersecurity, networks, and cloud computing.",
+                  "image": "/p7.jpg"
+                },
+                {
+                  "id": 8,
+                  "name": "Dr. Isha Verma",
+                  "designation": "Assistant Professor",
+                  "bio": "Focuses on environmental science, sustainability, and climate change.",
+                  "image": "/p8.jpg"
+                },
+                {
+                  "id": 9,
+                  "name": "Dr. Karan Sethi",
+                  "designation": "Assistant Professor",
+                  "bio": "Researches finance, investment strategies, and behavioral economics.",
+                  "image": "/p9.jpg"
+                }
+              ]
+            }
+          }
+        },
+        "CampusLife": {
+          "variants": {
+            "UniversityCampusLife1": {
+              "badge": "CAMPUS LIFE",
+              "title": "A Vibrant Campus,",
+              "titleHighlight": "Brighter Futures",
+              "description": "Our thriving campus is home to a community of curious, driven and accomplished individuals from diverse backgrounds.",
+              "heroImage": "/a1.webp",
+              "stats": [
+                { "value": "1,500+", "label": "Active Students" },
+                { "value": "8:1", "label": "Student-to-Faculty Ratio" },
+                { "value": "50+", "label": "Clubs & Activities" }
+              ],
+              "sections": [
+                {
+                  "title": "Student Life",
+                  "description": "A dynamic environment where students learn, grow and build lifelong friendships.",
+                  "items": [
+                    { "title": "Student Support", "desc": "Academic guidance, mentoring and resources.", "image": "/c1.webp" },
+                    { "title": "Student Clubs", "desc": "Explore interests through student-led initiatives.", "image": "/c2.webp" },
+                    { "title": "Diversity & Inclusion", "desc": "A community celebrating diverse cultures.", "image": "/c3.webp" }
+                  ]
+                },
+                {
+                  "title": "Campus Facilities",
+                  "description": "Modern facilities creating an ideal environment for learning and personal growth.",
+                  "items": [
+                    { "title": "Library & Learning Spaces", "desc": "Equipped libraries and quiet study zones.", "image": "/c4.webp" },
+                    { "title": "Housing & Dining", "desc": "Comfortable residential halls and food joints.", "image": "/c5.webp" },
+                    { "title": "Technology & Resources", "desc": "Modern classrooms and advanced hardware labs.", "image": "/c6.webp" }
+                  ]
+                },
+                {
+                  "title": "Arts & Culture",
+                  "description": "A creative campus that encourages self-expression through arts, culture and meaningful experiences.",
+                  "items": [
+                    { "title": "Visual Arts", "desc": "Exhibit your creativity through painting, design and visual arts programs.", "image": "/c7.webp" },
+                    { "title": "Music & Performing Arts", "desc": "Take part in music, theatre and performing arts events throughout the year.", "image": "/c8.webp" },
+                    { "title": "Cultural Events", "desc": "Celebrate various festivals, traditions and global cultures through engaging events.", "image": "/c9.webp" }
+                  ]
+                },
+                {
+                  "title": "Athletics, Recreation & Wellness",
+                  "description": "Stay active, healthy and balanced with a wide range of sports and wellness programs.",
+                  "items": [
+                    { "title": "Sports & Recreation", "desc": "Indoor and outdoor sports facilities for a healthy and active lifestyle.", "image": "/c10.webp" },
+                    { "title": "Health & Wellness", "desc": "Wellness programs, fitness centers and support services for a balanced student life.", "image": "/c11.webp" },
+                    { "title": "Outdoor Activities", "desc": "Explore nature through trekking, camps and recreational trips.", "image": "/c12.webp" }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "CampusLifeSection": {
+          "variants": {
+            "UniversityCampusLifeSection1": {
+              "badge": "CAMPUS LIFE",
+              "title": "Life Beyond",
+              "titleHighlight": "Classrooms",
+              "description": "At Crestmont University, campus life is a blend of learning, exploration, and meaningful connections. From vibrant student communities to cultural activities and athletic programs, we offer endless opportunities to grow, belong, and create unforgettable experiences.",
+              "cards": [
+                {
+                  "title": "Student Life",
+                  "description": "A vibrant community where ideas, friends, and opportunities come together.",
+                  "image": "/a2.jpg",
+                  "link": "/campus-life"
+                },
+                {
+                  "title": "Arts & Culture",
+                  "description": "Celebrating creativity through art, music, theatre, and cultural events that inspire and bring people together.",
+                  "link": "/campus-life"
+                },
+                {
+                  "title": "Athletics",
+                  "description": "Building strength, teamwork, and leadership through world-class sports facilities and competitive programs.",
+                  "link": "/campus-life"
+                }
+              ]
+            }
+          }
+        },
+        "TestimonialsSection": {
+          "variants": {
+            "UniversityTestimonials1": {
+              "badge": "STUDENT TESTIMONIALS",
+              "title": "Stories of Growth and",
+              "titleHighlight": "Success",
+              "leftBanner": {
+                "badge": "OUR STUDENTS",
+                "title": "A Community of Ambitious",
+                "titleHighlight": "Learners",
+                "description": "We are a diverse community of curious minds, creative thinkers, and future leaders shaping a better tomorrow together.",
+                "ctaButton": {
+                  "text": "GET IN TOUCH",
+                  "path": "/contact-us"
+                }
+              },
+              "testimonials": [
+                {
+                  "quote": "The faculty support and practical learning have helped me build confidence and prepared me for real-world challenges.",
+                  "name": "Riya Sharma",
+                  "program": "B.Tech Computer Science",
+                  "img": "/riya.jpg"
+                },
+                {
+                  "quote": "The diverse learning environment gave me the opportunity to explore my interests and grow both personally and professionally.",
+                  "name": "Aarav Mehta",
+                  "program": "BBA Business Administration",
+                  "img": "/p3.avif"
+                },
+                {
+                  "quote": "I've gained valuable knowledge, meaningful friendships, and opportunities that have shaped my future.",
+                  "name": "Sneha Verma",
+                  "program": "M.Sc Data Science",
+                  "img": "/sneha.avif"
+                },
+                {
+                  "quote": "The practical exposure and industry connect made my learning journey truly impactful.",
+                  "name": "Karan Patel",
+                  "program": "B.Tech Mechanical Engineering",
+                  "img": "/karan.avif"
+                },
+                {
+                  "quote": "The vibrant campus life and supportive community have made my university experience unforgettable.",
+                  "name": "Ananya Singh",
+                  "program": "BA Journalism & Mass Communication",
+                  "img": "/ananya.jpg"
+                },
+                {
+                  "quote": "The university encouraged me to think bigger, take initiative, and pursue my passions.",
+                  "name": "Aditya Rao",
+                  "program": "MBA Marketing",
+                  "img": "/aditya.jpg"
+                }
+              ]
+            }
+          }
+        },
+        "NewsEvents": {
+          "variants": {
+            "UniversityNewsEvents1": {
+              "badge": "NEWS & EVENTS",
+              "title": "Latest",
+              "titleHighlight": "News",
+              "titleEnd": "& Events",
+              "featuredPost": {
+                "category": "CAMPUS LIFE",
+                "title": "Crestmont University Launches Student Leadership Program",
+                "description": "An initiative to empower future leaders through mentorship, skills development, and real-world exposure.",
+                "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+                "link": "/news-events/guest-lecture-on-future-technologies",
+                "linkText": "Read Full Story"
+              },
+              "posts": [
+                {
+                  "id": 1,
+                  "slug": "guest-lecture-on-future-technologies",
+                  "title": "Guest Lecture on Future Technologies",
+                  "day": "12",
+                  "month": "Apr",
+                  "desc": "Applications are now open for undergraduate and postgraduate programs.",
+                  "description": "Join distinguished global tech visionaries and faculty researchers for an interactive guest session exploring artificial intelligence, quantum algorithms, and next-generation cloud networks.",
+                  "content": "This flagship lecture provides undergraduates and graduate scholars with rare insights into the industry frontier, offering open roundtables, Q&A sessions, and project mentorship directly with veteran engineers.",
+                  "date": "April 12, 2026",
+                  "time": "10:00 AM",
+                  "location": "Main Auditorium",
+                  "image": "/c1.webp"
+                },
+                {
+                  "id": 2,
+                  "slug": "annual-career-fair-2026",
+                  "title": "Annual Career Fair 2026",
+                  "day": "28",
+                  "month": "Mar",
+                  "desc": "Join industry leaders, alumni, and students for a day of ideas, collaboration, and growth.",
+                  "description": "Connect directly with hiring managers, talent recruiters, and enterprise alumni across technology, banking, healthcare, and research domains.",
+                  "content": "Bring printed resumes and digital portfolios to participate in on-the-spot interviews, resume critiques, and structured networking sprints designed to secure premier summer internships and full-time placements.",
+                  "date": "March 28, 2026",
+                  "time": "11:30 AM",
+                  "location": "University Grounds",
+                  "image": "/fair.jpg"
+                },
+                {
+                  "id": 3,
+                  "slug": "convocation-ceremony-2026",
+                  "title": "Convocation Ceremony 2026",
+                  "day": "14",
+                  "month": "Feb",
+                  "desc": "A proud moment as our graduates step into a brighter future.",
+                  "description": "A celebrated milestone honoring the dedication, scholarly achievements, and graduation of our undergraduate and postgraduate students.",
+                  "content": "Faculty, alumni leaders, and distinguished academic guests gather in ceremonial regalia to confer degrees, present gold medals, and celebrate the accomplishments of the graduating class.",
+                  "date": "February 14, 2026",
+                  "time": "09:00 AM",
+                  "location": "Central Auditorium",
+                  "image": "/group.jpg"
+                },
+                {
+                  "id": 4,
+                  "slug": "leadership-summit-2026",
+                  "title": "Leadership Summit & Speaker Series",
+                  "day": "20",
+                  "month": "Jan",
+                  "desc": "Advancing innovation and global collaboration through cutting-edge research.",
+                  "description": "A gathering of corporate heads, social entrepreneurs, and academic deans to debate progressive leadership paradigms and sustainable governance.",
+                  "content": "Engage in keynote addresses, breakout strategy clinics, and collaborative case workshops focused on agile organizational structures and societal problem solving.",
+                  "date": "January 20, 2026",
+                  "time": "02:00 PM",
+                  "location": "Seminar Hall A",
+                  "image": "/c6.webp"
+                },
+                {
+                  "id": 5,
+                  "slug": "annual-cultural-fest-2025",
+                  "title": "Spandan Annual Cultural Fest",
+                  "day": "15",
+                  "month": "Dec",
+                  "desc": "Annual cultural fest celebrating arts, music, and student talents.",
+                  "description": "A celebration of student creativity, performing arts, musical bands, dance competitions, and fine-arts exhibitions from across universities.",
+                  "content": "Experience dynamic stage acts, battle of the bands, literary debates, and evening celebrity concerts celebrating culture, art, and university camaraderie.",
+                  "date": "December 15, 2025",
+                  "time": "04:00 PM",
+                  "location": "Open Air Amphitheatre",
+                  "image": "/c8.webp"
+                },
+                {
+                  "id": 6,
+                  "slug": "inter-university-sports-meet",
+                  "title": "Inter-University Sports Championship",
+                  "day": "10",
+                  "month": "Nov",
+                  "desc": "Inter-university athletic meet bringing together competitive teams.",
+                  "description": "Cheer on varsity student-athletes as they contest championship trophies in track and field, football, basketball, and badminton.",
+                  "content": "Designed to cultivate sportsmanship, athletic discipline, and healthy competition, the week-long meet welcomes collegiate teams from across the nation.",
+                  "date": "November 10, 2025",
+                  "time": "09:00 AM",
+                  "location": "Sports Complex",
+                  "image": "/c10.webp"
+                }
+              ]
+            }
+          }
+        },
+        "Enroll": {
+          "variants": {
+            "UniversityEnroll1": {
+              "badge": "ENROLL NOW",
+              "title": "Take the Next Step",
+              "titleHighlight": "Towards Your Future",
+              "description": "Join a supportive learning community, explore endless opportunities, and build a brighter future. Fill out the form to begin your enrollment with us.",
+              "image": "/p8.jpg",
+              "formBadge": "APPLICATION FORM",
+              "formTitle": "Enroll",
+              "formTitleHighlight": "Now",
+              "formDescription": "Fill in your details to apply for your desired program.",
+              "programsList": [
+                "B.Tech Computer Science",
+                "BBA Business Administration",
+                "M.Sc Data Science",
+                "MBA Management Studies",
+                "BA Media & Communication"
+              ],
+              "whyEnrollFeatures": [
+                { "title": "Quality Education", "desc": "Industry-relevant programs designed for your growth.", "icon": "GraduationCap" },
+                { "title": "Expert Faculty", "desc": "Learn from experienced and supportive mentors.", "icon": "Users" },
+                { "title": "Modern Facilities", "desc": "World-class infrastructure for a better learning experience.", "icon": "Building2" },
+                { "title": "Bright Opportunities", "desc": "Career guidance and placement support to help you succeed.", "icon": "FileText" }
+              ]
+            }
+          }
+        },
+        "Contact": {
+          "variants": {
+            "UniversityContact1": {
+              "badge": "CONTACT US",
+              "title": "Get in Touch",
+              "titleHighlight": "With Us",
+              "description": "We're here to help. Reach out to us for any admissions, academic, or general enquiries.",
+              "campuses": {
+                "main": {
+                  "label": "MAIN CAMPUS",
+                  "phone": "+1 000 000 000",
+                  "timing": "Mon – Fri: 9:00 AM – 5:00 PM",
+                  "email": "admissions@xyz.com",
+                  "emailNote": "We typically respond within 24 hours.",
+                  "address": "Mesa, AZ 85212, United States",
+                  "country": "India"
+                },
+                "city": {
+                  "label": "CITY CAMPUS",
+                  "phone": "+1 000 000 000",
+                  "timing": "Mon – Sat: 9:30 AM – 6:00 PM",
+                  "email": "citycampus@xyz.com",
+                  "emailNote": "Dedicated cell for metropolitan students.",
+                  "address": "Mesa, AZ 85212, United States",
+                  "country": "India"
+                },
+                "regional": {
+                  "label": "REGIONAL CENTER",
+                  "phone": "+1 000 000 000",
+                  "timing": "Mon – Fri: 10:00 AM – 4:00 PM",
+                  "email": "regional@xyz.com",
+                  "emailNote": "Assistance for distant learning & outreach.",
+                  "address": "Mesa, AZ 85212, United States",
+                  "country": "India"
+                }
+              },
+              "form": {
+                "badge": "GET IN TOUCH",
+                "title": "Tell us",
+                "titleHighlight": "anything here.",
+                "description": "Have a question or need assistance? Fill out the form below and our team will get back to you shortly."
+              },
+              "mapLocation": {
+                "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.177265818956!2d-71.1218534!3d42.3736158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e377427d7f0199%3A0x5937c65cee2427f0!2sHarvard%20Square%2C%20Cambridge%2C%20MA%2C%20USA!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus",
+                "label": "University Main Campus Location"
+              }
+            }
+          }
+        },
+        "Footer": {
+          "variants": {
+            "UniversityFooter1": {
+              "brandName": "CRESTMONT",
+              "subBrand": "UNIVERSITY",
+              "logo": "/logo2.png",
+              "bgImage": "/a1.webp",
+              "tagline": "PEOPLE • PURPOSE • A BRIGHTER TOMORROW",
+              "quickLinksTitle": "Quick Links",
+              "quickLinks": [
+                { "title": "About Us", "path": "/about" },
+                { "title": "Programs", "path": "/courses" },
+                { "title": "Admissions", "path": "/enroll" },
+                { "title": "Contact Us", "path": "/contact-us" }
+              ],
+              "followUsTitle": "Follow Us",
+              "backToTopText": "BACK TO TOP",
+              "copyright": "© 2025 Crestmont University. All Rights Reserved. Powered by Lestow."
+            }
+          }
+        }
+      }
+    }
+  }
+}
