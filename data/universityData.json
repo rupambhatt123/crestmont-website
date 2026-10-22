@@ -103,6 +103,7 @@
         "Header": {
           "variants": {
             "UniversityHeader1": {
+              "logo": "/logo.png",
               "brandName": "CRESTMONT",
               "subBrand": "UNIVERSITY",
               "navLinks": [

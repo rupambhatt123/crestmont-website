@@ -13,13 +13,13 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 h-24 sm:h-28 flex items-center justify-between">
         
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
-          <div className="relative w-36 sm:w-44 h-12">
+        {/* Extra Large Logo Container */}
+        <Link href="/" className="flex items-center">
+          <div className="relative w-64 sm:w-80 lg:w-96 h-16 sm:h-20 lg:h-22">
             <Image
-              src="/logo2.png"
+              src={headerData.logo || "/logo1.webp"}
               alt={headerData.brandName}
               fill
               priority
