@@ -1,8 +1,6 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import Navbar from '@/components/Navbar';
 import PageBanner from '@/components/PageBanner';
-import Footer from '@/components/Footer';
 import universityData from '@/data/universityData.json';
 import { Calendar, Clock, MapPin, Users, Award, Handshake } from 'lucide-react';
 
@@ -26,8 +24,6 @@ export default async function DynamicEventPage({ params }: DynamicEventProps) {
 
   return (
     <main className="min-h-screen bg-white">
-      <Navbar />
-
       {/* Reusable Page Banner */}
       <PageBanner
         title="News & Events Detail"
@@ -238,8 +234,6 @@ export default async function DynamicEventPage({ params }: DynamicEventProps) {
 
         </div>
       </article>
-
-      <Footer />
     </main>
   );
 }
