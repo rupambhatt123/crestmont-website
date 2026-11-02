@@ -1,10 +1,9 @@
 {
   "common": {
     "siteName": "Crestmont University",
+    "address": "1200 Crestmont Way, University District, CA 90210",
     "phone": "+1 000 000 000",
-    "email": "admissions@xyz.com",
-    "address": "Mesa, AZ 85212, United States",
-    "tagline": "People • Purpose • A Brighter Tomorrow",
+    "email": "info@xyz.com",
     "socialLinks": {
       "facebook": "https://facebook.com",
       "instagram": "https://instagram.com",
@@ -200,7 +199,7 @@
                   "description": "Complete the online application with your details and documents.",
                   "icon": "FileCheck",
                   "type": "image",
-                  "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+                  "image": "/hero2.webp"
                 },
                 {
                   "stepNumber": "03",
@@ -217,7 +216,7 @@
           "variants": {
             "UniversityAcademics1": {
               "badge": "ACADEMICS",
-              "title": "Academic",
+              "title": "Academic ",
               "titleHighlight": "Excellence",
               "description": "At Crestmont University, our academic programs are designed to inspire curiosity, develop critical thinking, and prepare students for real-world challenges while fostering a learning environment that empowers every individual to grow and achieve their goals.",
               "heroImage": "/a1.webp",
@@ -344,7 +343,7 @@
                   "tuitionFee": "₹1,20,000 / Sem",
                   "about": "The Bachelor of Technology in Computer Science program is tailored to build strong foundations in computational theory, algorithm design, cloud engineering, and artificial intelligence. Students engage directly in state-of-the-art laboratory environments and real-world deployment stacks.",
                   "keyAreas": "Core algorithms, distributed systems, database management systems, AI/ML development, cybersecurity protocols, mobile software architectures, and automated cloud computing.",
-                  "teachingMethodsImage": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+                  "teachingMethodsImage": "a1.webp",
                   "teachingMethods": [
                     { "label": "Interactive Code Labs", "text": "Continuous hands-on software development with modern developer tooling." },
                     { "label": "Industry Mentorship", "text": "Regular technical roundtables and architecture reviews by principal tech leads." },
@@ -383,7 +382,7 @@
                   "tuitionFee": "₹95,000 / Sem",
                   "about": "The BBA program at Crestmont provides students with strategic business understanding, leadership frameworks, and analytics-driven decision capabilities across modern corporate ecosystems.",
                   "keyAreas": "Corporate finance, organizational behavior, global marketing strategy, business analytics, supply chain operations, and ethical entrepreneurship.",
-                  "teachingMethodsImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
+                  "teachingMethodsImage": "/a2.jpg",
                   "teachingMethods": [
                     { "label": "Case Study Simulations", "text": "Live dissection of Fortune 500 company case studies and business pivots." },
                     { "label": "Executive Workshops", "text": "Intensive strategy sprints driven by guest corporate CXOs." },
@@ -656,11 +655,12 @@
               "title": "Latest",
               "titleHighlight": "News",
               "titleEnd": "& Events",
+              "description": "Stay informed with the latest academic announcements, research milestones, student achievements, and vibrant happenings across Crestmont University.",
               "featuredPost": {
                 "category": "CAMPUS LIFE",
                 "title": "Crestmont University Launches Student Leadership Program",
                 "description": "An initiative to empower future leaders through mentorship, skills development, and real-world exposure.",
-                "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+                "image": "/hero2.webp",
                 "link": "/news-events/guest-lecture-on-future-technologies",
                 "linkText": "Read Full Story"
               },
@@ -672,12 +672,32 @@
                   "day": "12",
                   "month": "Apr",
                   "desc": "Applications are now open for undergraduate and postgraduate programs.",
+                  "subtitle": "Join distinguished global tech visionaries and faculty researchers for an interactive guest session exploring artificial intelligence, quantum algorithms, and next-generation cloud networks.",
                   "description": "Join distinguished global tech visionaries and faculty researchers for an interactive guest session exploring artificial intelligence, quantum algorithms, and next-generation cloud networks.",
                   "content": "This flagship lecture provides undergraduates and graduate scholars with rare insights into the industry frontier, offering open roundtables, Q&A sessions, and project mentorship directly with veteran engineers.",
                   "date": "April 12, 2026",
                   "time": "10:00 AM",
                   "location": "Main Auditorium",
-                  "image": "/c1.webp"
+                  "image": "/c1.webp",
+                  "aboutText1": "This distinguished guest lecture brings leading technology innovators and academic researchers together to share actionable perspectives on the rapid evolution of artificial intelligence, high-performance computing, and distributed networks.",
+                  "aboutText2": "Attendees will gain direct exposure to real-world deployment challenges, explore groundbreaking industry case studies, and participate in an open forum tailored to prepare aspiring engineers and scholars for transformative tech careers.",
+                  "stats": {
+                    "stat1Number": "500+",
+                    "stat1Label": "Expected Attendees & Participants",
+                    "stat2Number": "100%",
+                    "stat2Label": "Certified University Event",
+                    "stat3Title": "Collaborative",
+                    "stat3Subtitle": "Inter-Departmental Initiative"
+                  },
+                  "highlights": [
+                    "Keynote session delivered by seasoned industry architects and university research faculty",
+                    "Deep-dive technical breakdown of modern neural systems and scalable cloud infrastructure",
+                    "Interactive student Q&A session with live architecture demonstrations and research insights",
+                    "Complimentary resource materials, recorded session access, and attendance certificates for registered participants"
+                  ],
+                  "conclusionTitle": "Event",
+                  "conclusionHighlight": "Summary",
+                  "conclusionText": "We encourage all students, researchers, and faculty members to actively participate in this university event to expand their knowledge network and practical capabilities."
                 },
                 {
                   "id": 2,
@@ -686,12 +706,32 @@
                   "day": "28",
                   "month": "Mar",
                   "desc": "Join industry leaders, alumni, and students for a day of ideas, collaboration, and growth.",
+                  "subtitle": "Connect directly with hiring managers, talent recruiters, and enterprise alumni across technology, banking, healthcare, and research domains.",
                   "description": "Connect directly with hiring managers, talent recruiters, and enterprise alumni across technology, banking, healthcare, and research domains.",
                   "content": "Bring printed resumes and digital portfolios to participate in on-the-spot interviews, resume critiques, and structured networking sprints designed to secure premier summer internships and full-time placements.",
                   "date": "March 28, 2026",
                   "time": "11:30 AM",
                   "location": "University Grounds",
-                  "image": "/fair.jpg"
+                  "image": "/fair.jpg",
+                  "aboutText1": "The Annual Career Fair is Crestmont University's flagship professional recruitment event, connecting ambitious undergraduates and postgraduates directly with top national and international employers.",
+                  "aboutText2": "The day provides structured networking avenues, on-site interviews, resume clinics, and one-on-one recruiter interactions spanning tech, corporate management, analytics, finance, and creative media.",
+                  "stats": {
+                    "stat1Number": "80+",
+                    "stat1Label": "Participating Enterprises & Recruiters",
+                    "stat2Number": "1,200+",
+                    "stat2Label": "Active Job & Internship Offers",
+                    "stat3Title": "Career Launch",
+                    "stat3Subtitle": "On-Campus Placement Support"
+                  },
+                  "highlights": [
+                    "Over 80 participating recruiters from leading tech corporations, consulting firms, and public enterprises",
+                    "Dedicated on-the-spot interview pods and express resume review stations by senior HR specialists",
+                    "Interactive panel discussions highlighting modern workforce expectations and hiring trends",
+                    "Networking roundtables connecting current final-year students with successful university alumni"
+                  ],
+                  "conclusionTitle": "Career",
+                  "conclusionHighlight": "Opportunities",
+                  "conclusionText": "Students are advised to arrive in business formals with adequate copies of their resumes and digital portfolios to maximize placement opportunities."
                 },
                 {
                   "id": 3,
@@ -700,12 +740,32 @@
                   "day": "14",
                   "month": "Feb",
                   "desc": "A proud moment as our graduates step into a brighter future.",
+                  "subtitle": "A celebrated milestone honoring the dedication, scholarly achievements, and graduation of our undergraduate and postgraduate students.",
                   "description": "A celebrated milestone honoring the dedication, scholarly achievements, and graduation of our undergraduate and postgraduate students.",
                   "content": "Faculty, alumni leaders, and distinguished academic guests gather in ceremonial regalia to confer degrees, present gold medals, and celebrate the accomplishments of the graduating class.",
                   "date": "February 14, 2026",
                   "time": "09:00 AM",
                   "location": "Central Auditorium",
-                  "image": "/group.jpg"
+                  "image": "/group.jpg",
+                  "aboutText1": "The annual Convocation Ceremony celebrates the perseverance, intellectual dedication, and triumphant completion of degrees by the graduating class across all faculties.",
+                  "aboutText2": "Families, university leadership, esteemed alumni, and distinguished guests come together for this historic rite of passage, honoring academic excellence and future societal contributions.",
+                  "stats": {
+                    "stat1Number": "1,500+",
+                    "stat1Label": "Graduating Students Honored",
+                    "stat2Number": "45",
+                    "stat2Label": "Gold Medals & Academic Honors",
+                    "stat3Title": "Commencement",
+                    "stat3Subtitle": "Annual University Convocation"
+                  },
+                  "highlights": [
+                    "Formal academic procession led by university deans, chancellors, and faculty members",
+                    "Conferral of undergraduate, postgraduate, and doctoral degrees to graduating scholars",
+                    "Special presentation of gold medals, academic honors, and student leadership trophies",
+                    "Commencement address by a renowned guest of honor and valedictorian reflections"
+                  ],
+                  "conclusionTitle": "Ceremony",
+                  "conclusionHighlight": "Guidelines",
+                  "conclusionText": "All graduands are requested to complete formal registration and collect their academic regalia prior to entering the central auditorium hall."
                 },
                 {
                   "id": 4,
@@ -714,12 +774,32 @@
                   "day": "20",
                   "month": "Jan",
                   "desc": "Advancing innovation and global collaboration through cutting-edge research.",
+                  "subtitle": "A gathering of corporate heads, social entrepreneurs, and academic deans to debate progressive leadership paradigms and sustainable governance.",
                   "description": "A gathering of corporate heads, social entrepreneurs, and academic deans to debate progressive leadership paradigms and sustainable governance.",
                   "content": "Engage in keynote addresses, breakout strategy clinics, and collaborative case workshops focused on agile organizational structures and societal problem solving.",
                   "date": "January 20, 2026",
                   "time": "02:00 PM",
                   "location": "Seminar Hall A",
-                  "image": "/c6.webp"
+                  "image": "/c6.webp",
+                  "aboutText1": "The Leadership Summit & Speaker Series convenes executive decision-makers, disruptive founders, and academic strategists to discuss modern governance, leadership ethics, and industry transformations.",
+                  "aboutText2": "Designed to cultivate strategic vision among future leaders, this interactive summit presents actionable frameworks for leading resilient organizations in an era of rapid technological change.",
+                  "stats": {
+                    "stat1Number": "25+",
+                    "stat1Label": "Distinguished Keynote Speakers",
+                    "stat2Number": "6",
+                    "stat2Label": "Strategy Breakout Panels",
+                    "stat3Title": "Executive Insights",
+                    "stat3Subtitle": "Annual Leadership Series"
+                  },
+                  "highlights": [
+                    "Keynotes from pioneering founders, executive mentors, and management scholars",
+                    "Case-driven strategy breakout clinics with small-group collaborative problem-solving",
+                    "Debates exploring sustainable business models, ethical AI deployment, and talent cultivation",
+                    "Exclusive executive Q&A sessions designed specifically for university students"
+                  ],
+                  "conclusionTitle": "Summit",
+                  "conclusionHighlight": "Synthesis",
+                  "conclusionText": "Registered participants will receive comprehensive session dossiers, strategy executive briefs, and accredited participation certifications upon conclusion."
                 },
                 {
                   "id": 5,
@@ -728,12 +808,32 @@
                   "day": "15",
                   "month": "Dec",
                   "desc": "Annual cultural fest celebrating arts, music, and student talents.",
+                  "subtitle": "A celebration of student creativity, performing arts, musical bands, dance competitions, and fine-arts exhibitions from across universities.",
                   "description": "A celebration of student creativity, performing arts, musical bands, dance competitions, and fine-arts exhibitions from across universities.",
                   "content": "Experience dynamic stage acts, battle of the bands, literary debates, and evening celebrity concerts celebrating culture, art, and university camaraderie.",
                   "date": "December 15, 2025",
                   "time": "04:00 PM",
                   "location": "Open Air Amphitheatre",
-                  "image": "/c8.webp"
+                  "image": "/c8.webp",
+                  "aboutText1": "Spandan is Crestmont University's flagship annual cultural festival, celebrating the power of artistic expression, musical talent, theatrical production, and campus diversity.",
+                  "aboutText2": "Spanning exciting inter-collegiate competitions, literary showcases, and open-air concerts, the festival brings students together in an unforgettable celebration of energy and youth.",
+                  "stats": {
+                    "stat1Number": "35+",
+                    "stat1Label": "Colleges & Partner Universities",
+                    "stat2Number": "20+",
+                    "stat2Label": "Cultural & Artistic Contests",
+                    "stat3Title": "Campus Fest",
+                    "stat3Subtitle": "Annual Student Celebration"
+                  },
+                  "highlights": [
+                    "Inter-university Battle of the Bands featuring original indie and rock music sets",
+                    "Choreographed competitive dance showcases, street plays, and classical recitals",
+                    "Fine arts visual galleries, photography walks, and live interactive installation art",
+                    "Headline celebrity musical concert and campus DJ night under the stars"
+                  ],
+                  "conclusionTitle": "Fest",
+                  "conclusionHighlight": "Access",
+                  "conclusionText": "Entry is strictly facilitated via official student identification badges or pre-issued visitor entry passes at university gate reception counters."
                 },
                 {
                   "id": 6,
@@ -742,12 +842,32 @@
                   "day": "10",
                   "month": "Nov",
                   "desc": "Inter-university athletic meet bringing together competitive teams.",
+                  "subtitle": "Cheer on varsity student-athletes as they contest championship trophies in track and field, football, basketball, and badminton.",
                   "description": "Cheer on varsity student-athletes as they contest championship trophies in track and field, football, basketball, and badminton.",
                   "content": "Designed to cultivate sportsmanship, athletic discipline, and healthy competition, the week-long meet welcomes collegiate teams from across the nation.",
                   "date": "November 10, 2025",
                   "time": "09:00 AM",
                   "location": "Sports Complex",
-                  "image": "/c10.webp"
+                  "image": "/c10.webp",
+                  "aboutText1": "The Inter-University Sports Championship brings top collegiate athletes together to compete in track, field, indoor, and team sports while honoring teamwork and fair play.",
+                  "aboutText2": "With state-of-the-art facilities across synthetic tracks, Olympic courts, and floodlit fields, the championship is a premier collegiate sports attraction in the region.",
+                  "stats": {
+                    "stat1Number": "40+",
+                    "stat1Label": "Participating Collegiate Squads",
+                    "stat2Number": "12",
+                    "stat2Label": "Competitive Sports Disciplines",
+                    "stat3Title": "Athletics",
+                    "stat3Subtitle": "Championship Sports Series"
+                  },
+                  "highlights": [
+                    "Over 40 universities competing across 12 athletic disciplines",
+                    "Olympic-grade refereeing and digital real-time scoring systems across all courts",
+                    "High-voltage finals in football, basketball, badminton, and sprint relays",
+                    "Trophy presentation, fair-play awards, and sports scholarship announcements"
+                  ],
+                  "conclusionTitle": "Sports",
+                  "conclusionHighlight": "Sportsmanship",
+                  "conclusionText": "Supporters and team contingents can access arena seating galleries throughout match fixtures with free admission across stadium zones."
                 }
               ]
             }
@@ -792,7 +912,6 @@
                 "main": {
                   "label": "MAIN CAMPUS",
                   "phone": "+1 000 000 000",
-                  "timing": "Mon – Fri: 9:00 AM – 5:00 PM",
                   "email": "admissions@xyz.com",
                   "emailNote": "We typically respond within 24 hours.",
                   "address": "Mesa, AZ 85212, United States",
@@ -801,7 +920,6 @@
                 "city": {
                   "label": "CITY CAMPUS",
                   "phone": "+1 000 000 000",
-                  "timing": "Mon – Sat: 9:30 AM – 6:00 PM",
                   "email": "citycampus@xyz.com",
                   "emailNote": "Dedicated cell for metropolitan students.",
                   "address": "Mesa, AZ 85212, United States",
@@ -810,7 +928,6 @@
                 "regional": {
                   "label": "REGIONAL CENTER",
                   "phone": "+1 000 000 000",
-                  "timing": "Mon – Fri: 10:00 AM – 4:00 PM",
                   "email": "regional@xyz.com",
                   "emailNote": "Assistance for distant learning & outreach.",
                   "address": "Mesa, AZ 85212, United States",
@@ -845,6 +962,7 @@
                 { "title": "Admissions", "path": "/enroll" },
                 { "title": "Contact Us", "path": "/contact-us" }
               ],
+              "contactUsTitle": "Contact Us",
               "followUsTitle": "Follow Us",
               "backToTopText": "BACK TO TOP",
               "copyright": "© 2025 Crestmont University. All Rights Reserved. Powered by Lestow."

@@ -44,8 +44,8 @@ export default function AdmissionsProcess() {
   const titlePart2 = data.titleHighlight.split('');
 
   return (
-    <section className="bg-white py-12 lg:py-16 border-b border-gray-100 overflow-hidden">
-      <div className="max-w-[1360px] mx-auto px-6">
+    <section className="bg-white py-12 lg:py-16 border-b border-gray-200/90 overflow-hidden">
+      <div className="max-w-[1360px] mx-auto px-4 sm:px-6">
         
         {/* Header Block: Left Large Title + Right Description */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-10">
@@ -57,20 +57,21 @@ export default function AdmissionsProcess() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="flex items-center gap-3 mb-3"
+              className="flex items-center gap-3 mb-2.5 sm:mb-3"
             >
-              <div className="w-10 h-[2.5px] bg-[#800020]" />
-              <span className="text-[12px] font-extrabold tracking-[0.24em] text-[#1c1d20] uppercase font-sans">
+              <div className="w-8 sm:w-10 h-[2px] sm:h-[2.5px] bg-[#800020]" />
+              <span className="text-[11px] sm:text-[12px] font-extrabold tracking-[0.22em] sm:tracking-[0.24em] text-[#1c1d20] uppercase font-sans">
                 {data.badge}
               </span>
             </motion.div>
 
+            {/* Adjusted responsive font-size to prevent mobile text breaking */}
             <motion.h2 
               variants={titleContainerVariants}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="font-serif text-[52px] sm:text-[66px] lg:text-[78px] font-bold tracking-tight leading-[1.03] text-[#141517] select-none"
+              className="font-serif text-[34px] sm:text-[54px] lg:text-[78px] font-bold tracking-tight leading-[1.08] sm:leading-[1.03] text-[#141517] select-none"
             >
               <span className="block">
                 {titlePart1.map((char: string, i: number) => (
@@ -92,7 +93,7 @@ export default function AdmissionsProcess() {
 
           {/* Right Description with Red Left Border */}
           <div className="lg:col-span-4 lg:border-l-2 lg:border-[#800020] lg:pl-6 pb-2">
-            <p className="text-[14.5px] sm:text-[15.5px] text-gray-700 font-sans leading-[1.65]">
+            <p className="text-[13.5px] sm:text-[15.5px] text-gray-700 font-sans leading-[1.65]">
               {data.description}
             </p>
           </div>
@@ -100,7 +101,7 @@ export default function AdmissionsProcess() {
         </div>
 
         {/* 3 Step Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-7 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-7 items-stretch mb-8 sm:mb-12">
           
           {/* Card 1: Create an Account */}
           <motion.div
@@ -133,7 +134,7 @@ export default function AdmissionsProcess() {
               </span>
             </div>
 
-            {/* Bottom Content: Bada aur Bold Text */}
+            {/* Bottom Content */}
             <div className="pt-8">
               <h3 className="font-serif text-[26px] sm:text-[30px] lg:text-[32px] font-bold text-white mb-2.5 tracking-tight leading-[1.15]">
                 {steps[0].title}
@@ -191,7 +192,7 @@ export default function AdmissionsProcess() {
                 {steps[1].title}
               </h3>
               
-              <div className="w-10 h-[2.5px] bg-[#800020] mb-3" />
+              <div className="w-10 h-[2.5px] bg-[#800020]" />
 
               <p className="text-[14px] sm:text-[15px] text-gray-200 font-sans leading-[1.6]">
                 {steps[1].description}
@@ -230,7 +231,7 @@ export default function AdmissionsProcess() {
               </span>
             </div>
 
-            {/* Bottom Content: Bada aur Bold Text */}
+            {/* Bottom Content */}
             <div className="pt-8">
               <h3 className="font-serif text-[26px] sm:text-[30px] lg:text-[32px] font-bold text-white mb-2.5 tracking-tight leading-[1.15]">
                 {steps[2].title}
@@ -242,6 +243,9 @@ export default function AdmissionsProcess() {
           </motion.div>
 
         </div>
+
+        {/* Visible Separator Line on Both Mobile and Desktop */}
+        <div className="w-full h-px bg-gray-200" />
 
       </div>
     </section>

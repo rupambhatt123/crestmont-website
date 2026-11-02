@@ -27,10 +27,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${serifFont.variable} ${sansFont.variable}`}>
-      <body className="font-sans antialiased text-[#1a1a1a] bg-white flex flex-col min-h-screen">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${serifFont.variable} ${sansFont.variable} overflow-x-clip w-full max-w-full`}
+    >
+      <body
+        suppressHydrationWarning
+        className="font-sans antialiased text-[#1a1a1a] bg-white flex flex-col min-h-screen overflow-x-clip w-full max-w-full"
+      >
         <Header />
-        <main className="flex-1">
+        <main className="flex-1 w-full max-w-full overflow-x-clip pt-4 sm:pt-6 pb-16 sm:pb-24">
           {children}
         </main>
         <Footer />

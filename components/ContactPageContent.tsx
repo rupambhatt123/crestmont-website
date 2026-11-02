@@ -22,7 +22,7 @@ export default function ContactPageContent() {
   return (
     <div className="bg-white">
       {/* 1. Top Section: Campus Info & Addresses */}
-      <section className="pt-6 sm:pt-10 lg:pt-12 pb-6 sm:pb-8 max-w-[1360px] mx-auto px-4 sm:px-6">
+      <section className="pt-6 sm:pt-10 lg:pt-12 pb-6 sm:pb-8 max-w-[1360px] mx-auto px-4 sm:px-6 overflow-hidden">
         <div className="mb-6 sm:mb-8">
           <div className="flex items-center gap-2.5 sm:gap-3 mb-2 sm:mb-2.5">
             <span className="w-8 sm:w-9 h-[2px] sm:h-[2.5px] bg-[#800020]" />
@@ -31,8 +31,10 @@ export default function ContactPageContent() {
             </span>
           </div>
 
-          <h1 className="font-serif text-[34px] sm:text-[52px] lg:text-[74px] font-bold text-[#141517] leading-[1.04] sm:leading-[1.02] tracking-tight mb-2.5 sm:mb-3 select-none">
-            {contactData.title} <br className="hidden sm:inline" />
+          {/* Heading responsive scaling to prevent awkward break on mobile */}
+          <h1 className="font-serif text-[28px] xs:text-[34px] sm:text-[52px] lg:text-[74px] font-bold text-[#141517] leading-[1.12] sm:leading-[1.02] tracking-tight mb-2.5 sm:mb-3 select-none">
+            <span>{contactData.title} </span>
+            <br className="hidden sm:inline" />
             <span className="text-[#800020]">{contactData.titleHighlight}</span>
           </h1>
 
@@ -44,7 +46,7 @@ export default function ContactPageContent() {
         {/* Campus Tabs + 3 Info Cards */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-3.5 sm:gap-5 items-stretch">
           
-          {/* Campus Selector Buttons (Phone view: horizontal segmented buttons, Desktop: vertical) */}
+          {/* Campus Selector Buttons */}
           <div className="md:col-span-3 grid grid-cols-3 md:flex md:flex-col border border-gray-200 bg-white shadow-sm overflow-hidden">
             <button
               type="button"
@@ -92,9 +94,11 @@ export default function ContactPageContent() {
               </h3>
               <div className="w-7 sm:w-8 h-[2px] bg-[#800020] mt-2 sm:mt-3" />
             </div>
-            <p className="text-[11.5px] sm:text-[12.5px] text-[#6b7280] font-sans mt-3">
-              {current.timing}
-            </p>
+            {current.timing && (
+              <p className="text-[11.5px] sm:text-[12.5px] text-[#6b7280] font-sans mt-3">
+                {current.timing}
+              </p>
+            )}
           </div>
 
           {/* Card 2: Email Address */}
@@ -133,7 +137,7 @@ export default function ContactPageContent() {
       </section>
 
       {/* 2. Bottom Section: Form / Thank You + Live Map */}
-      <section className="py-8 sm:py-10 lg:py-12 bg-[#FAFAFA] border-t border-gray-200">
+      <section className="py-8 sm:py-10 lg:py-12 bg-[#FAFAFA] border-t border-gray-200 overflow-hidden">
         <div className="max-w-[1360px] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
           
           {/* Form / Thank You Container */}
@@ -145,8 +149,10 @@ export default function ContactPageContent() {
               </span>
             </div>
 
-            <h2 className="font-serif text-[32px] sm:text-[44px] lg:text-[56px] font-bold text-[#141517] leading-[1.05] tracking-tight mb-2 sm:mb-3">
-              {contactData.form.title} <br className="hidden sm:inline" />
+            {/* Form Heading responsive scaling */}
+            <h2 className="font-serif text-[26px] xs:text-[30px] sm:text-[44px] lg:text-[56px] font-bold text-[#141517] leading-[1.12] sm:leading-[1.05] tracking-tight mb-2 sm:mb-3">
+              <span>{contactData.form.title} </span>
+              <br className="hidden sm:inline" />
               <span className="text-[#800020]">{contactData.form.titleHighlight}</span>
             </h2>
 

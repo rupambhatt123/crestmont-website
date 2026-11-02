@@ -86,7 +86,7 @@ export default function EnrollContent() {
             />
           </div>
 
-          {/* Why Enroll With Us Section */}
+          {/* Why Enroll With Us Section - Single Column Alignment */}
           <div className="pt-2">
             <div className="flex items-center gap-3 mb-1.5">
               <span className="w-7 h-[2px] bg-[#800020]" />
@@ -98,20 +98,23 @@ export default function EnrollContent() {
               Why Enroll With Us
             </h3>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 text-center">
+            {/* Key Highlights aligned properly in a single column */}
+            <div className="flex flex-col gap-3">
               {data.whyEnrollFeatures.map((feat: any, idx: number) => {
                 const IconComponent = iconMap[feat.icon] || GraduationCap;
                 return (
-                  <div key={idx} className="flex flex-col items-center bg-[#FAF5F6] p-3 sm:p-4 border border-[#F3E5E7]">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white flex items-center justify-center text-[#800020] mb-2 shadow-xs">
-                      <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2]" />
+                  <div key={idx} className="flex items-center gap-4 bg-[#FAF5F6] p-4 border border-[#F3E5E7] text-left">
+                    <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center text-[#800020] shrink-0 shadow-xs">
+                      <IconComponent className="w-5 h-5 stroke-[2]" />
                     </div>
-                    <h4 className="font-serif text-[14px] sm:text-[15px] font-bold text-[#141517] mb-1 leading-snug">
-                      {feat.title}
-                    </h4>
-                    <p className="text-[11px] sm:text-[11.5px] text-gray-600 leading-snug font-medium">
-                      {feat.desc}
-                    </p>
+                    <div>
+                      <h4 className="font-serif text-[16px] sm:text-[17px] font-bold text-[#141517] mb-0.5 leading-snug">
+                        {feat.title}
+                      </h4>
+                      <p className="text-[12.5px] sm:text-[13px] text-gray-600 leading-relaxed font-sans font-medium">
+                        {feat.desc}
+                      </p>
+                    </div>
                   </div>
                 );
               })}

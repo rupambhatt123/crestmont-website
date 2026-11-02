@@ -31,9 +31,13 @@ export default function NewsPageContent() {
         
         {/* Top Centered Editorial Heading */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 lg:mb-14">
-          <span className="text-[10.5px] sm:text-[11.5px] font-black tracking-[0.22em] sm:tracking-[0.26em] text-[#1c1d20] uppercase font-sans block mb-2 sm:mb-3">
-            {data.badge}
-          </span>
+          {/* Top Decorative Line consistent with other pages */}
+          <div className="flex items-center justify-center gap-3 mb-2.5 sm:mb-3">
+            <span className="w-8 sm:w-9 h-[2.5px] bg-[#800020]" />
+            <span className="text-[10.5px] sm:text-[11.5px] font-black tracking-[0.22em] sm:tracking-[0.26em] text-[#1c1d20] uppercase font-sans">
+              {data.badge}
+            </span>
+          </div>
 
           <h1 className="font-serif text-[36px] sm:text-[56px] lg:text-[74px] font-black tracking-tight leading-[1.04] sm:leading-[1.03] mb-3 sm:mb-4 select-none">
             <span className="block text-[#141517]">{data.title}</span>
@@ -43,7 +47,7 @@ export default function NewsPageContent() {
           </h1>
 
           <p className="text-[13px] sm:text-[15px] lg:text-[16px] text-gray-600 font-sans leading-relaxed max-w-2xl mx-auto px-2">
-            {data.description}
+            {data.description || "Stay informed with the latest academic announcements, student achievements, campus gatherings, and cultural happenings across Crestmont University."}
           </p>
         </div>
 

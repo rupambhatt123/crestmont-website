@@ -108,10 +108,10 @@ export default function CoursesSection() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="grid grid-cols-1 lg:grid-cols-12 shadow-sm rounded-none overflow-hidden gap-y-4 lg:gap-y-0"
         >
-          {/* Left Card: Undergraduate */}
-          <div className="lg:col-span-4 bg-[#F8F8F8] p-6 sm:p-10 flex flex-col items-center text-center justify-between min-h-[260px] sm:min-h-[340px]">
+          {/* Left Card: Undergraduate (Text aligned to one side) */}
+          <div className="lg:col-span-4 bg-[#F8F8F8] p-6 sm:p-10 flex flex-col items-start text-left justify-between min-h-[260px] sm:min-h-[340px]">
             <div>
-              <div className="flex flex-col items-center mb-3 sm:mb-4">
+              <div className="flex flex-col items-start mb-3 sm:mb-4">
                 <span className="text-[10px] sm:text-[10.5px] font-bold tracking-[0.22em] text-[#555] uppercase font-sans">
                   {leftCard.tag}
                 </span>
@@ -122,14 +122,14 @@ export default function CoursesSection() {
                 {leftCard.title}
               </h3>
 
-              <p className="text-[12.5px] sm:text-[13.5px] text-[#555] font-sans leading-[1.6] max-w-[280px] mx-auto">
+              <p className="text-[12.5px] sm:text-[13.5px] text-[#555] font-sans leading-[1.6]">
                 {leftCard.description}
               </p>
             </div>
 
             <Link
               href={leftCard.ctaPath}
-              className="mt-5 sm:mt-6 text-[12.5px] sm:text-[13px] font-semibold text-[#800020] hover:text-[#660018] flex items-center gap-1.5 border-b border-[#800020] pb-0.5 group transition-colors font-sans"
+              className="mt-5 sm:mt-6 text-[12.5px] sm:text-[13px] font-semibold text-[#800020] hover:text-[#660018] inline-flex items-center gap-1.5 border-b border-[#800020] pb-0.5 group transition-colors font-sans self-start"
             >
               <span>{leftCard.ctaText}</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
@@ -157,10 +157,10 @@ export default function CoursesSection() {
             ))}
           </div>
 
-          {/* Right Card: Postgraduate */}
-          <div className="lg:col-span-4 bg-[#F8F8F8] p-6 sm:p-10 flex flex-col items-center text-center justify-between min-h-[260px] sm:min-h-[340px]">
+          {/* Right Card: Postgraduate (Text aligned to one side) */}
+          <div className="lg:col-span-4 bg-[#F8F8F8] p-6 sm:p-10 flex flex-col items-start text-left justify-between min-h-[260px] sm:min-h-[340px]">
             <div>
-              <div className="flex flex-col items-center mb-3 sm:mb-4">
+              <div className="flex flex-col items-start mb-3 sm:mb-4">
                 <span className="text-[10px] sm:text-[10.5px] font-bold tracking-[0.22em] text-[#555] uppercase font-sans">
                   {rightCard.tag}
                 </span>
@@ -171,14 +171,14 @@ export default function CoursesSection() {
                 {rightCard.title}
               </h3>
 
-              <p className="text-[12.5px] sm:text-[13.5px] text-[#555] font-sans leading-[1.6] max-w-[280px] mx-auto">
+              <p className="text-[12.5px] sm:text-[13.5px] text-[#555] font-sans leading-[1.6]">
                 {rightCard.description}
               </p>
             </div>
 
             <Link
               href={rightCard.ctaPath}
-              className="mt-5 sm:mt-6 text-[12.5px] sm:text-[13px] font-semibold text-[#800020] hover:text-[#660018] flex items-center gap-1.5 border-b border-[#800020] pb-0.5 group transition-colors font-sans"
+              className="mt-5 sm:mt-6 text-[12.5px] sm:text-[13px] font-semibold text-[#800020] hover:text-[#660018] inline-flex items-center gap-1.5 border-b border-[#800020] pb-0.5 group transition-colors font-sans self-start"
             >
               <span>{rightCard.ctaText}</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />

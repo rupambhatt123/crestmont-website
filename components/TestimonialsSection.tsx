@@ -60,62 +60,56 @@ export default function TestimonialsSection() {
   };
 
   return (
-    /* overflow-visible zaroori hai taaki sticky scroll track break na ho */
-    <section className="bg-[#111315] py-10 lg:py-14 text-white overflow-visible border-b border-gray-900 relative">
+    <section className="bg-[#111315] py-10 lg:py-14 text-white border-b border-gray-900 relative">
       <div className="max-w-[1360px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
         
-        {/* ================= LEFT COLUMN: STICKY CARD ================= */}
-        <div className="lg:col-span-4 lg:sticky lg:top-24 z-20 self-start">
-          <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="relative rounded-none overflow-hidden min-h-[460px] sm:min-h-[500px] p-8 sm:p-10 flex flex-col justify-between shadow-2xl bg-[#1c1d20]"
-          >
-            {/* Background Image */}
-            <div className="absolute inset-0 z-0">
-              <Image
-                src={leftBanner.bgImage || "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1000&q=80"}
-                alt="University Campus"
-                fill
-                priority
-                className="object-cover object-center opacity-45 mix-blend-luminosity"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#800020]/90 via-[#180206]/75 to-[#111315]/80" />
-            </div>
-
-            {/* Banner Top Content */}
-            <div className="relative z-10">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-6 h-[2.5px] bg-[#a81c30]" />
-                <span className="text-[11px] font-bold tracking-[0.22em] text-gray-200 uppercase font-sans">
-                  {leftBanner.badge}
-                </span>
+        {/* ================= LEFT COLUMN: STICKY BANNER ================= */}
+        <div className="lg:col-span-4 h-full">
+          <div className="lg:sticky lg:top-28 z-20 self-start w-full">
+            <div className="relative rounded-none overflow-hidden min-h-[460px] sm:min-h-[500px] p-8 sm:p-10 flex flex-col justify-between shadow-2xl bg-[#1c1d20]">
+              {/* Background Image */}
+              <div className="absolute inset-0 z-0">
+                <Image
+                  src={leftBanner.bgImage || "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1000&q=80"}
+                  alt="University Campus"
+                  fill
+                  priority
+                  className="object-cover object-center opacity-45 mix-blend-luminosity"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#800020]/90 via-[#180206]/75 to-[#111315]/80" />
               </div>
 
-              <h3 className="font-serif text-[38px] sm:text-[48px] font-bold leading-[1.03] tracking-tight text-white mb-6">
-                A Community <br />
-                of Ambitious <br />
-                <span className="text-[#e23b54] font-bold">Learners</span>
-              </h3>
+              {/* Banner Top Content */}
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-6 h-[2.5px] bg-[#a81c30]" />
+                  <span className="text-[11px] font-bold tracking-[0.22em] text-gray-200 uppercase font-sans">
+                    {leftBanner.badge}
+                  </span>
+                </div>
 
-              <p className="text-[13.5px] text-gray-200 font-sans leading-[1.65] max-w-[320px]">
-                {leftBanner.description}
-              </p>
-            </div>
+                <h3 className="font-serif text-[38px] sm:text-[48px] font-bold leading-[1.03] tracking-tight text-white mb-6">
+                  <span>{leftBanner.title} </span>
+                  <span className="text-[#e23b54] font-bold block">{leftBanner.titleHighlight}</span>
+                </h3>
 
-            {/* CTA Button */}
-            <div className="relative z-10 pt-8">
-              <Link
-                href={leftBanner.ctaButton.path}
-                className="bg-[#800020] hover:bg-[#9c0529] text-white px-6 py-3.5 text-[12px] font-bold tracking-wider uppercase inline-flex items-center gap-3 transition-all duration-300 shadow-lg group hover:translate-x-1 font-sans"
-              >
-                <span>{leftBanner.ctaButton.text}</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform" />
-              </Link>
+                <p className="text-[13.5px] text-gray-200 font-sans leading-[1.65] max-w-[320px]">
+                  {leftBanner.description}
+                </p>
+              </div>
+
+              {/* CTA Button */}
+              <div className="relative z-10 pt-8">
+                <Link
+                  href={leftBanner.ctaButton.path}
+                  className="bg-[#800020] hover:bg-[#9c0529] text-white px-6 py-3.5 text-[12px] font-bold tracking-wider uppercase inline-flex items-center gap-3 transition-all duration-300 shadow-lg group hover:translate-x-1 font-sans"
+                >
+                  <span>{leftBanner.ctaButton.text}</span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform" />
+                </Link>
+              </div>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         {/* ================= RIGHT COLUMN: SCROLLABLE CARDS ================= */}
@@ -163,7 +157,7 @@ export default function TestimonialsSection() {
             </motion.h2>
 
             <p className="text-[13.5px] text-gray-400 font-sans leading-relaxed max-w-[620px]">
-              {data.subtitle || "Hear from our students about their experiences, achievements, and how our programs have helped them reach their goals."}
+              {data.description || data.subtitle || "Hear from our students about their experiences, achievements, and how our programs have helped them reach their goals."}
             </p>
           </div>
 
